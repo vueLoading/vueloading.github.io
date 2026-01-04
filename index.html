@@ -9,7 +9,9 @@
     <!-- 若需仅针对该文件重定向，可使用JavaScript判断URL -->
       <script>
         const targetFile = "5f9ee68f1d0f36a42af3378dcb9b2582.txt";
+          console.log('1')
         if (window.location.href.includes(targetFile)) {
+            console.log('2')
             window.location.href = `https://raw.githubusercontent.com/vueLoading/vueloading.github.io/refs/heads/main/${targetFile}`;
         }
     </script>
@@ -20,5 +22,6 @@
 </body>
 
 </html>
+
 
 
