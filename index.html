@@ -1,10 +1,21 @@
-<!-- 放在index.html的<head>标签内，仅对目标文件做重定向 -->
-<meta http-equiv="refresh"
-    content="0; url=https://raw.githubusercontent.com/vueLoading/vueloading.github.io/refs/heads/main/5f9ee6f81d0f36a42af3378dcb9b2582.txt" />
-<!-- 若需仅针对该文件重定向，可使用JavaScript判断URL -->
-<script>
-    const targetFile = "5f9ee68f1d0f36a42af3378dcb9b2582.txt";
-    if (window.location.href.includes(targetFile)) {
-        window.location.href = `https://raw.githubusercontent.com/vueLoading/vueloading.github.io/refs/heads/main/${targetFile}`;
-    }
-</script>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 放在index.html的<head>标签内，仅对目标文件做重定向 -->
+    <meta http-equiv="refresh"
+        content="0; url=https://raw.githubusercontent.com/vueLoading/vueloading.github.io/refs/heads/main/5f9ee6f81d0f36a42af3378dcb9b2582.txt" />
+    <!-- 若需仅针对该文件重定向，可使用JavaScript判断URL -->
+</head>
+
+<body>
+    <script>
+        const targetFile = "5f9ee68f1d0f36a42af3378dcb9b2582.txt";
+        if (window.location.href.includes(targetFile)) {
+            window.location.href = `https://raw.githubusercontent.com/vueLoading/vueloading.github.io/refs/heads/main/${targetFile}`;
+        }
+    </script>
+</body>
+
+</html>
